@@ -46,8 +46,8 @@ const MapView = () => {
   return (
     <div style={{ height: 'calc(100vh - 60px)', width: '100%' }}>
       <MapContainer
-        center={[48.8566, 2.3522]}
-        zoom={13}
+        center={[7.5399, -5.5471]}
+        zoom={7}
         style={{ height: '100%', width: '100%' }}
       >
         <TileLayer
