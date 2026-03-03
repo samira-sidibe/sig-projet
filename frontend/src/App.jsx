@@ -3,6 +3,7 @@ import { AuthProvider, useAuth } from './context/AuthContext';
 import Login from './pages/Login';
 import Dashboard from './pages/Dashboard';
 import Vehicles from './pages/Vehicles';
+import Positions from './pages/Positions';
 
 // Protection des routes
 const PrivateRoute = ({ children }) => {
@@ -29,6 +30,14 @@ const App = () => {
             element={
               <PrivateRoute>
                 <Vehicles />
+              </PrivateRoute>
+            }
+          />
+          <Route
+            path="/positions"
+            element={
+              <PrivateRoute>
+                <Positions />
               </PrivateRoute>
             }
           />
